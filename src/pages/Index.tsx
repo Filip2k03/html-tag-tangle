@@ -5,9 +5,16 @@ import DropZone from '@/components/DropZone';
 import ScoreBoard from '@/components/ScoreBoard';
 
 const LEVELS = [
+  { tags: ['div'], points: 5 },
   { tags: ['div', 'p'], points: 10 },
   { tags: ['div', 'p', 'span'], points: 15 },
   { tags: ['div', 'p', 'span', 'h1'], points: 20 },
+  { tags: ['div', 'p', 'span', 'h1', 'h2'], points: 25 },
+  { tags: ['div', 'p', 'span', 'h1', 'h2', 'a'], points: 30 },
+  { tags: ['div', 'p', 'span', 'h1', 'h2', 'a', 'ul'], points: 35 },
+  { tags: ['div', 'p', 'span', 'h1', 'h2', 'a', 'ul', 'li'], points: 40 },
+  { tags: ['div', 'p', 'span', 'h1', 'h2', 'a', 'ul', 'li', 'img'], points: 45 },
+  { tags: ['div', 'p', 'span', 'h1', 'h2', 'a', 'ul', 'li', 'img', 'form'], points: 50 },
 ];
 
 const Index = () => {

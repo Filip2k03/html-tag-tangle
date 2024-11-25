@@ -99,24 +99,24 @@ const Index = () => {
 
         <div className="mt-12 flex justify-center gap-8">
           <DropZone
-            onDrop={(e) => handleDrop(e, true)}
-            isActive={!currentPair}
-          >
-            {currentPair && <DraggableTag
-              tag={currentPair.tag}
-              isOpening={true}
-              onDragStart={() => {}}
-              className="cursor-default"
-            />}
-          </DropZone>
-          
-          <DropZone
             onDrop={(e) => handleDrop(e, false)}
             isActive={currentPair && !currentPair.matched}
           >
             {currentPair && currentPair.matched && <DraggableTag
               tag={currentPair.tag}
               isOpening={false}
+              onDragStart={() => {}}
+              className="cursor-default"
+            />}
+          </DropZone>
+
+          <DropZone
+            onDrop={(e) => handleDrop(e, true)}
+            isActive={!currentPair}
+          >
+            {currentPair && <DraggableTag
+              tag={currentPair.tag}
+              isOpening={true}
               onDragStart={() => {}}
               className="cursor-default"
             />}
